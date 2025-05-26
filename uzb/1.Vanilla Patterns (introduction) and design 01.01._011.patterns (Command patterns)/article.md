@@ -27,7 +27,14 @@ Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchi
 </p>
 
 
-<p style="font-family: Arial, Helvetica, sans-serif;">OrderManager</p> klassida bizda <p style="font-family: Arial, Helvetica, sans-serif;">placeOrder</p>, <p style="font-family: Arial, Helvetica, sans-serif;">trackOrder</p> va  <p style="font-family: 'Arial, Helvetica, sans-serif;">cancelOrder</p> metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
+<p style="font-family: Arial, Helvetica, sans-serif;">
+  <span style="font-family: monospace;">OrderManager</span> klassida bizda 
+  <span style="font-family: monospace;">placeOrder</span>, 
+  <span style="font-family: monospace;">trackOrder</span> va 
+  <span style="font-family: monospace;">cancelOrder</span> 
+  metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
+</p>
+
 
 <p align="center">
   <img src="../../images/02.vinilla.png" alt="Rasm" width="400" />
