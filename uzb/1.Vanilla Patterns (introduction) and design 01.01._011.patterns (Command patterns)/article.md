@@ -27,7 +27,7 @@ Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchi
 </p>
 
 
-<span className="font-mono italic">OrderManager</span> klassida bizda <span className="font-mono font-bold">placeOrder</span>, <span className="font-mono">trackOrder</span> va  <span className="font-mono">cancelOrder</span> metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
+<span style="font-family: 'Times New Roman', Times, serif';">OrderManager</span> klassida bizda <span style="font-family: 'Times New Roman', Times, serif';">placeOrder</span>, <span style="font-family: 'Times New Roman', Times, serif';">trackOrder</span> va  <span style="font-family: 'Times New Roman', Times, serif';">cancelOrder</span> metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
 <p align="center">
   <img src="../../images/02.vinilla.png" alt="Rasm" width="400" />
