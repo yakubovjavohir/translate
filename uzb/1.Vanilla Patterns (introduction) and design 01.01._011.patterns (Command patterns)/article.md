@@ -1,4 +1,4 @@
-<p align="center">Kirish</p>
+<p align="center" style="font-size: 35px;">Kirish</p>
 
 **Dizayn patternlar** dasturiy ta'minotni ishlab chiqishning fundamental qismi, chunki ular dasturiy ta'minotni loyihalashda tez-tez uchrab turadigan muammolarga sodda va namunaviy yechimlar taqdim etadi. Dizayn patternlar muayyan dasturiy ta'minot kodlarini emas, aksincha takrorlanuvchi masalalarni optimallashtirilgan tarzda hal qilish uchun qo’llanilishi mumkin bo'lgan konsepsiyalardir.
 
