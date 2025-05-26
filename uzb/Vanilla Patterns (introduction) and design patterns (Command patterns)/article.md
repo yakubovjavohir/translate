@@ -20,18 +20,18 @@ Command patterni yordamida biz ma'lum bir vazifani bajaradigan obyektlarni metod
 Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchilar buyurtmalarni joylashtirishi, kuzatishi va bekor qilishi mumkin.
 
 
-![Rasm](https://lh3.googleusercontent.com/keep-bbsk/AFgXFlIkKh1LWK6_Rn06y4GeoBZXFKoOIbYN85iTpoqovWA--SUKkXDjHZBM0ZYOelRw9ILMa_Cy4tuPDMH1NtwTkmcrLFR1a9iR973leA0Eb3wbgPxtkEt00g=s512)
+![Rasm](https://postimg.cc/zVFqScKt)
 
 OrderManager klassida bizda placeOrder, trackOrder va cancelOrder metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
-![Rasm](https://lh3.googleusercontent.com/keep-bbsk/AFgXFlIkKh1LWK6_Rn06y4GeoBZXFKoOIbYN85iTpoqovWA--SUKkXDjHZBM0ZYOelRw9ILMa_Cy4tuPDMH1NtwTkmcrLFR1a9iR973leA0Eb3wbgPxtkEt00g=s512
+![Rasm](https://postimg.cc/jWLKTq9m)
 
 Biroq, metodlarni to’g’ridan-to’g’ri manager obyekt nusxasida (instance) chaqirishning salbiy tomonlari mavjud.  Keyinchalik ba'zi metodlarning nomini o'zgartirishga qaror qilishimiz yoki metodlarning funksionalligi o'zgarishi mumkin.
 Aytaylik, biz  placeOrder deb nomlash o’rniga,  addOrder deb qayta nomlasak! Bu esa placeOrder metodini kod bazamizning hech bir joyida chaqirmasligimizga ishonch hosil qilishimizni talab qiladi, bu katta ilovalarda muammo paydo bo’lishiga olib kelishi mumkin.  Buning o'rniga metodlarni manager obyektidan ajratib olamiz va har bir buyruq uchun alohida buyruq funksiyalarini yaratamiz!
 Keling, OrderManager klassini qayta tuzib chiqamiz:  placeOrder, cancelOrder va trackOrder metodlari o’rniga u bitta execute metodiga ega bo’ladi. Bu metod unga berilgan har qanday buyruqni bajaradi.
-Har bir buyruq menejerning orders ma’lumotlariga kirish huquqiga ega bo'lishi kerak, biz uni birinchi argument sifatida uzatamiz. )
+Har bir buyruq menejerning orders ma’lumotlariga kirish huquqiga ega bo'lishi kerak, biz uni birinchi argument sifatida uzatamiz. 
 
-![Rasm](https://keep.google.com/u/0/media/v2/1uKW4nlyRG6Xw2xlVNUKyzyWXdBZkhJTWJKNm--w8XXc5EAenmcfOJCfsejXCTIA/1BYhCY0_TpkFRcYqR2DFNkl5E1eoDRvQ4gGk6CyH9NbwNVe-njDi0GeHEtb1Ulw?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![Rasm](https://postimg.cc/D4d36SJJ)
 
 # Buyurtma menejeri uchun Commandlar
 Buyurtma menejeri uchun uchta Command yaratishimiz kerak: 
@@ -41,16 +41,16 @@ Buyurtma menejeri uchun uchta Command yaratishimiz kerak:
 - TrackOrderCommand
 
 
-![Rasm](https://keep.google.com/u/0/media/v2/1w57mnQLGDeY6hsQd3aPaJDT8_NFzF23w0hlMbe4I8PHpPy7_lSTR4H-Fmc8TBQ/1pb0AnoUuyYstWoW3HuWmEQq6_56SeQf60JUQPvZzT-oqvGjcHVlgkIvxtE4MaA?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![Rasm](https://postimg.cc/5Xkdsd03)
 
 Ajoyib! To'g'ridan-to'g'ri OrderManager nusxasiga bog'langan metodlar o'rniga, ular endi alohida, mustaqil funksiyalar bo'lib, ularni OrderManager da mavjud  execute metodi orqali chaqirishimiz mumkin.
 
-![Rasm](https://keep.google.com/u/0/media/v2/1MA6QeXRBhx19u9N8Wk3bfEZqdAPViPOL178HXyNmF817t5ElJDFtnhQHMb5352Q/14g3mjDyd0uXgCMFV86hVCZWIvU-H5aAYxcLckfjPKX81AoHjvsaUbqHxkkiDTA?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![Rasm](https://postimg.cc/PvHBCd3t)
 
-Afzalliklari
+# Afzalliklari
 
 Command patterni bizga operatsiyani bajaruvchi obyektdan metodlarni ajratish imkonini beradi. Agar siz ma'lum vaqt oralig’ida ishlashi kerak bo’lgan buyruqlar yoki ma'lum vaqtda navbatga qo'yilib, keyinroq bajarilishi kerak bo'lgan buyruqlar bilan ishlayotgan bo'lsangiz, u sizga ko'proq nazorat imkoniyatini beradi.
 
-Kamchiliklari
+# Kamchiliklari
 
 Command pattern’ning qo’llanilish holatlari juda cheklangan va ko'pincha ilovaga ortiqcha ko’p takrorlanuvchi kod (boilerplate code) qo'shadi.
