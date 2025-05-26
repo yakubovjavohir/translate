@@ -21,14 +21,14 @@ Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchi
 
 
 <p align="center">
-  <img src="../../images/01.vinilla.png" alt="Rasm" width="500" height="400"/>
+  <img src="../../images/01.vinilla.png" alt="Rasm" width="400" />
 </p>
 
 
 OrderManager klassida bizda placeOrder, trackOrder va cancelOrder metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
 <p align="center">
-  <img src="../../images/02.vinilla.png" alt="Rasm" width="500" height="400" />
+  <img src="../../images/02.vinilla.png" alt="Rasm" width="400" />
 </p>
 
 Biroq, metodlarni to’g’ridan-to’g’ri manager obyekt nusxasida (instance) chaqirishning salbiy tomonlari mavjud.  Keyinchalik ba'zi metodlarning nomini o'zgartirishga qaror qilishimiz yoki metodlarning funksionalligi o'zgarishi mumkin.
@@ -37,7 +37,7 @@ Keling, OrderManager klassini qayta tuzib chiqamiz:  placeOrder, cancelOrder va 
 Har bir buyruq menejerning orders ma’lumotlariga kirish huquqiga ega bo'lishi kerak, biz uni birinchi argument sifatida uzatamiz. 
 
 <p align="center">
-  <img src="../../images/03.vinilla.png" alt="Rasm" width="500" height="400" />
+  <img src="../../images/03.vinilla.png" alt="Rasm" width="400" />
 </p>
 
 
@@ -49,14 +49,14 @@ Buyurtma menejeri uchun uchta Command yaratishimiz kerak:
 - TrackOrderCommand
 
 <p align="center">
-  <img src="../../images/04.vinilla.png" alt="Rasm" width="500" height="400" />
+  <img src="../../images/04.vinilla.png" alt="Rasm" width="400" />
 </p>
 
 
 Ajoyib! To'g'ridan-to'g'ri OrderManager nusxasiga bog'langan metodlar o'rniga, ular endi alohida, mustaqil funksiyalar bo'lib, ularni OrderManager da mavjud  execute metodi orqali chaqirishimiz mumkin.
 
 <p align="center">
-  <img src="../../images/05.vinilla.png" alt="Rasm" width="500" height="400" />
+  <img src="../../images/05.vinilla.png" alt="Rasm" width="400" />
 </p>
 
 
