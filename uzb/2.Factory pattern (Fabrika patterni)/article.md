@@ -76,7 +76,16 @@ Nusxalarning umumiy sonini kuzatib borish uchun kutubxonadagi kitoblarning umumi
 Ajoyib! Har safar nusxa qo'shganimizda yangi Book nusxasini yaratish o'rniga, biz ushbu nusxa uchun allaqachon mavjud Book nusxasidan samarali foydalanishimiz mumkin. Keling, 3 ta kitobning 5 ta nusxasini yarataylik: Garri Potter (Harry Potter), Mayna qushni o’ldirish (To Kill a Mockingbird) va Shovvoz Getsbi (The Great Gatsby).
 
 <p align="center">
-  <img src="../../images/11.design.png" alt="Rasm" width="400" />
+  <img src="../../images/10.design.png" alt="Rasm" width="400" />
 </p>
 
 5 nusxa mavjud bo'lsa-da, bizda faqat 3 ta Book obyekti bor!
+
+<p align="center">
+  <img src="../../images/11.design.png" alt="Rasm" width="400" />
+</p>
+
+
+Flyweight patterni tizimning barcha mavjud operativ xotirasini band qilishi mumkin bo'lgan juda ko'p obyektlarni yaratishda foydalidir. Bu bizga ishlatilayotgan xotira hajmini minimallashtirishga imkon beradi.
+
+JavaScriptda biz ushbu muammoni [prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) orqali osongina hal qilishimiz mumkin. Hozirgi vaqtda  texnik qurilmalarda bir necha GB tezkor xotira mavjud bo'lib, bu flyweight patterni’ning ahamiyatini biroz kamaytiradi.
