@@ -19,8 +19,6 @@ Qabul qilingan DOM nodelarida **gidratsiya** (hydration) usulini chaqirish tegis
 
 
 
-## Misol: Streaming bilan Server-Side Rendering
-
 Aytaylik, bizda `App` komponentida foydalanuvchiga minglab **cat facts** (mushuklar haqidagi faktlar)ni ko‘rsatadigan ilova bor!
 
 Quyidagi kod `React`, `Express`, va `renderToNodeStream` funksiyasi yordamida **Streaming Server-Side Rendering**ni amalga oshiradi:
@@ -131,8 +129,14 @@ App komponenti built-in renderToNodeStream usuli yordamida streamni oladi. Dastl
 12</html>
 ```
 
-Bu maʼlumotlar hujjat sarlavhasi va stylesheet kabi mazmunni to’g’ri renderlash uchun ilovamiz foydalanishi kerak bo’lgan foydali maʼlumotlarni o’z ichiga oladi. Agar biz renderToString usuli yordamida App komponentini server orqali render qilmoqchi bo‘lsak, ilova ushbu meta ma’lumotni yuklash va qayta ishlashni boshlashdan oldin barcha ma’lumotlarni qabul qilishini kutishimiz kerak edi. Buni tezlashtirish uchun renderToNodeStream ilovaga ushbu ma'lumotni yuklash va qayta ishlashni boshlash imkonini beradi, chunki u hali ham App komponentidan ma'lumotlarning bir qismini olmoqda!
+# Server-Side Rendering va Progressiv Gidratsiyalash haqida
 
-Progressiv gidratsiyalash va Server Renderingni qanday amalga oshirish haqida ko'proq misollarni ko'rish uchun ushbu GitHub repoga tashrif buyuring.
+Bu maʼlumotlar hujjat sarlavhasi va stylesheet kabi mazmunni to’g’ri renderlash uchun ilovamiz foydalanishi kerak bo’lgan foydali maʼlumotlarni o’z ichiga oladi.
 
-Stylesheetni yetkazib berishni optimallashtirish uchun uslubli komponentlar oqimli renderlashdan qanday foydalanishini ko‘ring. bu sozlar link
+Agar biz `renderToString` usuli yordamida `App` komponentini server orqali render qilmoqchi bo‘lsak, ilova ushbu meta ma’lumotni yuklash va qayta ishlashni boshlashdan oldin barcha ma’lumotlarni qabul qilishini kutishimiz kerak edi.
+
+Buni tezlashtirish uchun `renderToNodeStream` ilovaga ushbu ma'lumotni yuklash va qayta ishlashni boshlash imkonini beradi, chunki u hali ham `App` komponentidan ma'lumotlarning bir qismini olmoqda!
+
+Progressiv gidratsiyalash va Server Renderingni qanday amalga oshirish haqida ko'proq misollarni ko'rish uchun ushbu [GitHub repoga](https://github.com/vercel/react-ssr-example) tashrif buyuring.
+
+Stylesheetni yetkazib berishni optimallashtirish uchun uslubli komponentlar oqimli renderlashdan qanday foydalanishini ko‘ring — bu [sozlarga havola](https://styled-components.com/docs/advanced#server-side-rendering).
