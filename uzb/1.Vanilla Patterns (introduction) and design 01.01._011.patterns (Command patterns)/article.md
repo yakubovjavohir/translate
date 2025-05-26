@@ -27,15 +27,7 @@ Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchi
 </p>
 
 
-<p>
-  <span style="font-family: monospace; font-weight: bold;">OrderManager</span> klassida bizda 
-  <span style="font-family: monospace;">placeOrder</span>, 
-  <span style="font-family: monospace;">trackOrder</span> va 
-  <span style="font-family: monospace;">cancelOrder</span> 
-  metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
-</p>
-
-
+**OrderManager** klassida bizda **placeOrder**, **trackOrder** va **cancelOrder** metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
 <p align="center">
   <img src="../../images/02.vinilla.png" alt="Rasm" width="400" />
