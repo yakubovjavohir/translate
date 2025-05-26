@@ -20,18 +20,26 @@ Command patterni yordamida biz ma'lum bir vazifani bajaradigan obyektlarni metod
 Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchilar buyurtmalarni joylashtirishi, kuzatishi va bekor qilishi mumkin.
 
 
-![Rasm](../../images/01.vinilla.png)
+<p align="center">
+  <img src="../../images/01.vinilla.png" alt="Rasm" width="400" />
+</p>
+
 
 OrderManager klassida bizda placeOrder, trackOrder va cancelOrder metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
-![Rasm](../../images/02.vinilla.png)
+<p align="center">
+  <img src="../../images/02.vinilla.png" alt="Rasm" width="400" />
+</p>
 
 Biroq, metodlarni to’g’ridan-to’g’ri manager obyekt nusxasida (instance) chaqirishning salbiy tomonlari mavjud.  Keyinchalik ba'zi metodlarning nomini o'zgartirishga qaror qilishimiz yoki metodlarning funksionalligi o'zgarishi mumkin.
 Aytaylik, biz  placeOrder deb nomlash o’rniga,  addOrder deb qayta nomlasak! Bu esa placeOrder metodini kod bazamizning hech bir joyida chaqirmasligimizga ishonch hosil qilishimizni talab qiladi, bu katta ilovalarda muammo paydo bo’lishiga olib kelishi mumkin.  Buning o'rniga metodlarni manager obyektidan ajratib olamiz va har bir buyruq uchun alohida buyruq funksiyalarini yaratamiz!
 Keling, OrderManager klassini qayta tuzib chiqamiz:  placeOrder, cancelOrder va trackOrder metodlari o’rniga u bitta execute metodiga ega bo’ladi. Bu metod unga berilgan har qanday buyruqni bajaradi.
 Har bir buyruq menejerning orders ma’lumotlariga kirish huquqiga ega bo'lishi kerak, biz uni birinchi argument sifatida uzatamiz. 
 
-![Rasm](../../images/03.vinilla.png)
+<p align="center">
+  <img src="../../images/03.vinilla.png" alt="Rasm" width="400" />
+</p>
+
 
 # Buyurtma menejeri uchun Commandlar
 Buyurtma menejeri uchun uchta Command yaratishimiz kerak: 
@@ -40,12 +48,17 @@ Buyurtma menejeri uchun uchta Command yaratishimiz kerak:
 - CancelOrderCommand  
 - TrackOrderCommand
 
+<p align="center">
+  <img src="../../images/04.vinilla.png" alt="Rasm" width="400" />
+</p>
 
-![Rasm](../../images/04.vinilla.png)
 
 Ajoyib! To'g'ridan-to'g'ri OrderManager nusxasiga bog'langan metodlar o'rniga, ular endi alohida, mustaqil funksiyalar bo'lib, ularni OrderManager da mavjud  execute metodi orqali chaqirishimiz mumkin.
 
-![Rasm](../../images/05.vinilla.png)
+<p align="center">
+  <img src="../../images/05.vinilla.png" alt="Rasm" width="400" />
+</p>
+
 
 # Afzalliklari
 
