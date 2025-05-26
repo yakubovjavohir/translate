@@ -1,4 +1,4 @@
-Factory pattern (Fabrika patterni)
+<h1 align="center">Factory pattern (Fabrika patterni)</h1>
 
 Factory patterni yordamida yangi obyektlar yaratish uchun factory funksiyalaridan foydalanishimiz mumkin. Agar funksiya new kalit so'zdan foydalanmasdan yangi obyektni qaytarsa, u factory funksiyasi hisoblanadi!
 
