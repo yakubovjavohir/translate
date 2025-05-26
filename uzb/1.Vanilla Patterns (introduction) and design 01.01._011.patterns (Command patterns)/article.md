@@ -27,13 +27,14 @@ Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchi
 </p>
 
 
-<p style="font-family: Arial, Helvetica, sans-serif;">
-  <span style="font-family: monospace;">OrderManager</span> klassida bizda 
+<p>
+  <span style="font-family: monospace; font-weight: bold;">OrderManager</span> klassida bizda 
   <span style="font-family: monospace;">placeOrder</span>, 
   <span style="font-family: monospace;">trackOrder</span> va 
   <span style="font-family: monospace;">cancelOrder</span> 
   metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 </p>
+
 
 
 <p align="center">
