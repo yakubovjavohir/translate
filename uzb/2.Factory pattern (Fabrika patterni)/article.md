@@ -70,13 +70,13 @@ createBook funksiyasi bir turdagi kitobning yangi nusxalarini yaratishga yordam 
 Nusxalarning umumiy sonini kuzatib borish uchun kutubxonadagi kitoblarning umumiy sonini o'z ichiga olgan bookList massivini yaratamiz.
 
 <p align="center">
-  <img src="../../images/09design.png" alt="Rasm" width="400" />
+  <img src="../../images/09.design.png" alt="Rasm" width="400" />
 </p>
 
 Ajoyib! Har safar nusxa qo'shganimizda yangi Book nusxasini yaratish o'rniga, biz ushbu nusxa uchun allaqachon mavjud Book nusxasidan samarali foydalanishimiz mumkin. Keling, 3 ta kitobning 5 ta nusxasini yarataylik: Garri Potter (Harry Potter), Mayna qushni o’ldirish (To Kill a Mockingbird) va Shovvoz Getsbi (The Great Gatsby).
 
 <p align="center">
-  <img src="../../images/011design.png" alt="Rasm" width="400" />
+  <img src="../../images/11.design.png" alt="Rasm" width="400" />
 </p>
 
 5 nusxa mavjud bo'lsa-da, bizda faqat 3 ta Book obyekti bor!
