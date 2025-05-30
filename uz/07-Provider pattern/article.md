@@ -126,7 +126,7 @@ Keling, avvalga List misolimizni olib, komponentlarni styled-component kutubxona
 ListItem komponentiga ichki style props berish o'rniga, uni styled.li  komponentiga aylantiramiz. Bu stilli komponent bo'lgani uchun theme qiymatidan to’g’ridan-to’g’ri foydalana olamiz!
 
 <p align="center">
-  <img src="../../images/16.provider.png" alt="Rasm" width="400" />
+  <img src="../../images/20.provider.png" alt="Rasm" width="400" />
 </p>
 
 Ajoyib, endi biz ThemeProvider yordamida barcha stillli komponentlarimizga stillarni osongina qo'llashimiz mumkin!
