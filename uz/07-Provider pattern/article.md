@@ -133,11 +133,11 @@ Ajoyib, endi biz ThemeProvider yordamida barcha stillli komponentlarimizga still
 
 
 <p align="center">
-  <img src="../../images/17.provider.png" alt="Rasm" width="400" />
+  <img src="../../images/18.provider.png" alt="Rasm" width="400" />
 </p>
 
 <p align="center">
-  <img src="../../images/18.provider.png" alt="Rasm" width="400" />
+  <img src="../../images/19.provider.png" alt="Rasm" width="400" />
 </p>
 
 # Afzalliklari
@@ -160,7 +160,7 @@ Keling, oddiy hisoblagich (counter) misolini ko'rib chiqaylik. Uning qiymati But
 Increment tugmasini bosganingizda nafaqat hisob, balki Reset komponentidagi sana ham qayta render bo’lishini ko’rasiz!
 
 <p align="center">
-  <img src="../../images/18.provider.png" alt="Rasm" width="400" />
+  <img src="../../images/17.provider.png" alt="Rasm" width="400" />
 </p>
 
 Reset komponenti ham useContext’dan foydalangani uchun qayta render bo’ladi. Nisbatan kichikroq ilovalarda bu xavotirga arzigulik muammo bo’lmasligi mumkin. Ammo, kattaroq ilovalarda tez-tez yangilanadigan qiymatni ko'plab komponentlarga uzatish ishlash samaradorligiga jiddiy salbiy ta'sir ko'rsatishi mumkin.
