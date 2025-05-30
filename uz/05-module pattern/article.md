@@ -66,12 +66,20 @@ Ba'zida eksport nomlari lokal qiymatlar bilan to’qnashishi mumkin.
   <img src="../../images/08.module.png" alt="Rasm" width="400" />
 </p>
 
+Bu holatda index.js faylida add va multiply deb nomlangan funksiyalar mavjud. Agar biz xuddi shu nomdagi qiymatlarni import qilsak, nom to'qnashuvi yuzaga keladi: add va multiply allaqachon e'lon qilingan! Yaxshiyamki, biz import qilingan qiymatlarni as kalit so'zidan foydalanib qayta nomlashimiz mumkin. 
+
+Import qilingan add va multiply funksiyalarini addValues ​​va multiplyValues sifatida qayta nomlaymiz.
+
+<p align="center">
+  <img src="../../images/09.module.png" alt="Rasm" width="400" />
+</p>
+
 export kalit so'zi bilan belgilangan nomli eksport (named export)lardan tashqari, standart eksport (default export)dan ham foydalanishingiz mumkin. Har bir modulda faqat bitta standart eksport bo’lishi mumkin.
 
 Keling, add funksiyasini default export qilamiz va boshqa funksiyalarni named export sifatida qoldiramiz. Qiymat oldiga default export kalit so’zini qo’shish orqali standart qiymatni eksport qilishimiz mumkin.
 
 <p align="center">
-  <img src="../../images/09.module.png" alt="Rasm" width="400" />
+  <img src="../../images/10.module.png" alt="Rasm" width="400" />
 </p>
 
 Named export va default export o'rtasidagi farq - bu qiymatni moduldan eksport qilish usuli bo’lib, natijada qiymatni import qilish usulini samarali tarzda o'zgartiradi.
@@ -79,7 +87,7 @@ Named export va default export o'rtasidagi farq - bu qiymatni moduldan eksport q
 Avval biz nomli (named) eksportlar uchun jingalak qavslardan foydalanishimiz kerak edi: import { module } from 'module'. Standart (default) eksport bilan esa qiymatni qavslarsiz import qilishimiz mumkin: import module from 'module'.
 
 <p align="center">
-  <img src="../../images/10.module.png" alt="Rasm" width="400" />
+  <img src="../../images/11.module.png" alt="Rasm" width="400" />
 </p>
 
 Moduldan qavslarsiz import qilingan qiymat, agar default export mavjud bo'lsa, har doim default export qiymati bo'ladi.
@@ -87,7 +95,7 @@ Moduldan qavslarsiz import qilingan qiymat, agar default export mavjud bo'lsa, h
 JavaScript bu qiymat har doim default export bilan eksport qilingan qiymat ekanligini bilganligi sababli, import qilingan standart qiymatga uni eksport qilgan nomdan boshqa nom berishimiz mumkin. add funksiyasini add nomi bilan import qilish o'rniga, masalan, biz uni addValue ​​deb nolmashimiz mumkin. 
 
 <p align="center">
-  <img src="../../images/11.module.png" alt="Rasm" width="400" />
+  <img src="../../images/12.module.png" alt="Rasm" width="400" />
 </p>
 
 Biz add nomli funksiyasini eksport qilgan bo‘lsak ham, uni o‘zimizga maqul kelgan istalgan nom bilan import qilishimiz mumkin, chunki JavaScript default export’ni import qilayotganingizni biladi.
@@ -95,13 +103,13 @@ Biz add nomli funksiyasini eksport qilgan bo‘lsak ham, uni o‘zimizga maqul k
 Shuningdek, biz moduldan barcha eksportlarni - barcha nomli export va default export’larni yulduzcha * yordamida va modulga beradigan nomimiz orqali import qilishimiz mumkin. Import qiymati barcha import qilingan qiymatlarni o'z ichiga olgan obyektga teng bo’ladi. Aytaylik, butun modulni math sifatida import qilmoqchimiz.
 
 <p align="center">
-  <img src="../../images/12.module.png" alt="Rasm" width="400" />
+  <img src="../../images/13.module.png" alt="Rasm" width="400" />
 </p>
 
 Import qilingan qiymatlar math obyektining xususiyatlari bo’ladi.
 
 <p align="center">
-  <img src="../../images/13.module.png" alt="Rasm" width="400" />
+  <img src="../../images/14.module.png" alt="Rasm" width="400" />
 </p>
 
 Bu holatda moduldan barcha eksportlarni import qilamiz. Buni qilishda ehtiyot bo'ling, chunki keraksiz qiymatlarni ham import qilib olishingiz mumkin.
@@ -114,10 +122,6 @@ React yordamida ilovalar yaratishda ko'pincha katta miqdordagi komponentlar bila
 Bizda ro'yxat, ro'yxat elementlari, input maydoni va tugmani o'z ichiga olgan sodda vazifalar ro'yxati (todo-list) mavjud.
 
 <p align="center">
-  <img src="../../images/14.module.png" alt="Rasm" width="400" />
-</p>
-
-<p align="center">
   <img src="../../images/15.module.png" alt="Rasm" width="400" />
 </p>
 
@@ -127,6 +131,10 @@ Bizda ro'yxat, ro'yxat elementlari, input maydoni va tugmani o'z ichiga olgan so
 
 <p align="center">
   <img src="../../images/17.module.png" alt="Rasm" width="400" />
+</p>
+
+<p align="center">
+  <img src="../../images/18.module.png" alt="Rasm" width="400" />
 </p>
 
 Biz komponentlarimizni quyidagi alohida fayllarga ajratdik:
@@ -142,7 +150,7 @@ Biz komponentlarimizni quyidagi alohida fayllarga ajratdik:
  Faylning yuqori qismida barcha modullarni import qilganda, ular faylning qolgan qismidan oldin yuklanadi. Ba'zi hollarda bizga modul faqat ma'lum bir shartlar asosida kerak bo’ladi. Dinamik import yordamida biz modullarni kerak bo’lganda yuklashimiz mumkin.
 
  <p align="center">
-  <img src="../../images/18.module.png" alt="Rasm" width="400" />
+  <img src="../../images/19.module.png" alt="Rasm" width="400" />
 </p>
 
 
@@ -151,7 +159,7 @@ Keling, oldingi misollarda ishlatilgan math.js ni dinamik ravishda import qilayl
 Modul faqat foydalanuvchi tugmani bosgandagina yuklanadi.
 
  <p align="center">
-  <img src="../../images/19.module.png" alt="Rasm" width="400" />
+  <img src="../../images/20.module.png" alt="Rasm" width="400" />
 </p>
 
 Modullarni dinamik import qilish orqali sahifi yuklash vaqtini qisqartirishimiz mumkin. Biz faqat foydalanuvchiga aynan kerak bo'lgan kodni kerak bo’lgan vaqtda yuklash, tahlil qilish va kompilyatsiya qilishimiz mumkin.
@@ -159,7 +167,7 @@ Modullarni dinamik import qilish orqali sahifi yuklash vaqtini qisqartirishimiz 
 Modullarni talabga binoan (on-demand) import qilish imkoniyatidan tashqari import() funksiyasi ifoda (expressoin) qabul qilishi mumkin. Bu bizga shablon satrlar  (template literals)dan foydalanib, berilgan qiymat asosida modullarni dinamik yuklash imkonini beradi.
 
  <p align="center">
-  <img src="../../images/20.module.png" alt="Rasm" width="400" />
+  <img src="../../images/21.module.png" alt="Rasm" width="400" />
 </p>
 
 Yuqoridagi misolda, foydalanuvchi “Click to load image” tugmasini bosgandagina date.js moduli import qilinadi. date.js moduli uchinchi tomon moment modulini import qiladi, u ham faqat date.js moduli yuklangandagina import qilinadi. Agar foydalanuvchiga sanalarni ko'rsatish kerak bo'lmasa, bu uchinchi tomon kutubxonasini yuklashni umuman amalga oshirmasligimiz mumkin.
@@ -167,7 +175,7 @@ Yuqoridagi misolda, foydalanuvchi “Click to load image” tugmasini bosgandagi
 Har bir rasm foydalanuvchi tugmani bosgandan so'ng yuklanadi. Rasmlar lokal .png fayllar bo'lib, ular num qiymatiga asosan yuklanadi. 
 
  <p align="center">
-  <img src="../../images/21.module.png" alt="Rasm" width="400" />
+  <img src="../../images/22.module.png" alt="Rasm" width="400" />
 </p>
 
 Bu holat o’zgarmas kodli (hard-coded) modul yo'llariga bog'liq emas. U foydalanuvchi kiritgan maʼlumotlar, tashqi manbadan olingan maʼlumotlar, funksiya natijasi va boshqalar asosida modullarni import qilishga moslashuvchanlik qo’shadi.
