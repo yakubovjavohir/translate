@@ -6,15 +6,16 @@ Kodingizni qayta ishlatiluvchi kichikroq qismlarga ajratish imkoniyatidan tashqa
 # ES2015 Modullari
 
 ES2015 ichki o'rnatilgan JavaScript modullarini taqdim etdi. Modul - bu JavaScript kodini o'z ichiga olgan fayl bo'lib, oddiy skriptdan farqli xususiyatlarga ega.
-Keling, matematik funksiyalarni o'z ichiga olgan math.js deb nomlangan modul misolini ko'rib chiqaylik.
+
+Keling, matematik funksiyalarni o'z ichiga olgan <code style="background-color: yellow; padding: 2px 4px; border-radius: 4px;">math.js</code>, deb nomlangan modul misolini ko'rib chiqaylik.
 
 <p align="center">
   <img src="../../images/01.module.png" alt="Rasm" width="400" />
 </p>
 
-Bizda oddiy matematik amallarni bajaruvchi <b>math.js</b> fayli bor. Unda foydalanuvchilarga qo'shish, ko'paytirish, ayirish va kvadratga ko’tarish imkonini beruvchi funksiyalar mavjud.
+Bizda oddiy matematik amallarni bajaruvchi <code style="background-color: yellow; padding: 2px 4px; border-radius: 4px;">math.js</code>, fayli bor. Unda foydalanuvchilarga qo'shish, ko'paytirish, ayirish va kvadratga ko’tarish imkonini beruvchi funksiyalar mavjud.
 
-Biroq, biz bu funksiyalardan faqat <b>math.js</b> faylida emas, balki  <b>index.js</b>  faylida ham foydalanish imkoniyatiga ega bo‘lmoqchimiz! Hozirda  <b>index.js</b>  faylida xatolik yuzaga keladi:  <b>index.js</b>  faylida add, subtract, multiply yoki square funksiyalari mavjud emas. Biz  index.js  faylida mavjud bo'lmagan funksiyalarga murojaat qilishga harakat qilyapmiz.
+Biroq, biz bu funksiyalardan faqat subtract faylida emas, balki  <b>index.js</b>  faylida ham foydalanish imkoniyatiga ega bo‘lmoqchimiz! Hozirda  <b>index.js</b>  faylida xatolik yuzaga keladi:  <b>index.js</b>  faylida add, subtract, multiply yoki square funksiyalari mavjud emas. Biz  index.js  faylida mavjud bo'lmagan funksiyalarga murojaat qilishga harakat qilyapmiz.
 
 <p align="center">
   <img src="../../images/02.module.png" alt="Rasm" width="400" />
