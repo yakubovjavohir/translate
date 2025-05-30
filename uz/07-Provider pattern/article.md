@@ -71,15 +71,18 @@ Toggle komponentida mavzuni mos ravishda yangilash uchun toggleTheme funksiyasid
   <img src="../../images/09.provider.png" alt="Rasm" width="400" />
 </p>
 
+List komponentining o'zi joriy mavzu qiymatidan foydalanmaydi. Biroq, ListItem komponentlari esa undan foydalanadi! Biz theme  kontekstidan to'g'ridan-to'g'ri ListItem ichida foydalana olamiz. 
+
+ <p align="center">
+  <img src="../../images/10.provider.png" alt="Rasm" width="400" />
+</p>
+
 Juda soz! Joriy Mavzu qiymatidan foydalanmaydigan komponentlarga hech qanday ma'lumot uzatishimiz shart bo’lmadi.
 
 # Hook’lar
 
 Komponentlarga kontekst taqdim qilish uchun maxsus hook yaratishimiz mumkin. Har bir komponentda useContext va Context’ni alohida import qilish o'rniga, bizga kerakli kontekstdan qaytaradigan hook’dan foydalansak bo’ladi.
 
- <p align="center">
-  <img src="../../images/10.provider.png" alt="Rasm" width="400" />
-</p>
 
 Hook’imiz to’g’ri mavzu qaytarayotganiga ishonch hosil qilish uchun, agar useContext(ThemeContext) noto’g’ri qiymat qaytarsa, xatoga chiqaramiz.
 
