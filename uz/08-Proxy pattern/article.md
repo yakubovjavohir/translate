@@ -55,13 +55,13 @@ name xususiyatini o'zgartirganimizda esa, Proxy ushbu xususiyatning oldingi va y
 Proxy validatsiya qo'shish uchun juda foydali. Masalan foydalanuvchi person obyektining yoshi qiymatini satr qiymatiga o'zgartira olmasligi yoki unga bo'sh ism bera olmasligi kerak. Yoki agar foydalanuvchi obyektda mavjud bo'lmagan xususiyatga murojaat qilmoqchi bo’lsa, biz uni bu haqda ogohlantirishimiz lozim. 
 
 <p align="center">
-  <img src="../../images/07.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/08.proxy.png" alt="Rasm" width="400" />
 </p>
 
 Noto'g'ri qiymatlar kiritishga urinib ko’raylik!
 
 <p align="center">
-  <img src="../../images/08.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/09.proxy.png" alt="Rasm" width="400" />
 </p>
 
 Proxy noto'g'ri qiymatlar bilan person obyektini o’zgartirishga yo’l qo’ymadi, bu esa bizga ma'lumotlarimizni butunligini va kodni toza saqlashga yordam beradi!
@@ -75,13 +75,13 @@ Avvalroq biz proksi ichidi maqsadli obyekt xususiyatlarini to'g'ridan-to'g'ri to
 obj[prop] orqali xususiyatlarga kirish yoki obj[prop] = value orqali xususiyatlarni o'rnatish o'rniga, Reflect.get() va Reflect.set() orqali maqsadli obyekt xususiyatlariga murojaat qilishimiz yoki o'zgartirishimiz mumkin. Bu metodlar ishlov beruvchi obyektidagi metodlar bilan bir xil argumentlarni qabul qiladi.
 
 <p align="center">
-  <img src="../../images/09.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/10.proxy.png" alt="Rasm" width="400" />
 </p>
 
 Juda yaxshi! Reflect obyekti yordamida maqsadli obyektning xususiyatlariga osongina murojaat qilib, ularni o'zgartirishimiz mumkin.
 
 <p align="center">
-  <img src="../../images/10.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/11.prxy.png" alt="Rasm" width="400" />
 </p>
 
 # Afzalliklari
