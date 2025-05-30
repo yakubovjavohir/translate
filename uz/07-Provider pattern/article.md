@@ -111,7 +111,7 @@ Turli kontekstlar uchun turli hook’lar yaratish orqali provayderlar logikasini
 
 # Amaliy misol
 
-Ba'zi kutubxonalar ichki o’rnatilgan provayderlarni taqdim etadi, ularning qiymatlaridan biz komponentlarda foydalanishimiz mumkin. Buning ajoyib misoli - styled-components kutubxonasi.
+Ba'zi kutubxonalar ichki o’rnatilgan provayderlarni taqdim etadi, ularning qiymatlaridan biz komponentlarda foydalanishimiz mumkin. Buning ajoyib misoli - [styled-components](https://styled-components.com/docs/advanced) kutubxonasi.
 
 “Eslatma: Bu misolni tushunish uchun styled-components bo’yicha tajriba talab etilmaydi.”
 
