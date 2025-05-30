@@ -79,7 +79,7 @@ obj[prop] orqali xususiyatlarga kirish yoki obj[prop] = value orqali xususiyatla
 Juda yaxshi! Reflect obyekti yordamida maqsadli obyektning xususiyatlariga osongina murojaat qilib, ularni o'zgartirishimiz mumkin.
 
 <p align="center">
-  <img src="../../images/12.prxy.png" alt="Rasm" width="400" />
+  <img src="../../images/11.prxy.png" alt="Rasm" width="400" />
 </p>
 
 # Afzalliklari
