@@ -31,7 +31,7 @@ Keling Counter klassining faqat bitta nusxasini yaratish mumkinligiga ishonch ho
 Faqat bitta nusxa yaratilishini ta’minlashning bir usuli - instance nomli o'zgaruvchini yaratishdir. Counter konstruktorida yangi nusxa yaratilganda, biz ushbu instance o’zgaruvchisini ushbu nusxaga havola qilib o'rnatamiz. Agar instance o'zgaruvchisi allaqachon qiymatga ega bo’lsa, yangi nusxalarning yaratilishin oldini olishimiz mumkin. Bunday holatda nusxa (instance) allaqachon mavjud bo’ladi va bu xato hisoblanadi: foydalanuvchini ogohlantirish uchun xatolik chiqarilishi kerak. 
 
 <p align="center">
-  <img src="../../images/04.singleton.png" alt="Rasm" width="400" />
+  <img src="../../images/12.singleton.png" alt="Rasm" width="400" />
 </p>
 
 Juda yaxshi! Endi biz bir nechta nusxalar yarata olish imkoniyatidan mahrum bo’ldik.
