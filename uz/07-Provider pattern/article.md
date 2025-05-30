@@ -84,22 +84,27 @@ Juda soz! Joriy Mavzu qiymatidan foydalanmaydigan komponentlarga hech qanday ma'
 Komponentlarga kontekst taqdim qilish uchun maxsus hook yaratishimiz mumkin. Har bir komponentda useContext va Context’ni alohida import qilish o'rniga, bizga kerakli kontekstdan qaytaradigan hook’dan foydalansak bo’ladi.
 
 
-Hook’imiz to’g’ri mavzu qaytarayotganiga ishonch hosil qilish uchun, agar useContext(ThemeContext) noto’g’ri qiymat qaytarsa, xatoga chiqaramiz.
 
  <p align="center">
   <img src="../../images/11.provider.png" alt="Rasm" width="400" />
 </p>
 
-Komponentlarni to'g'ridan-to'g'ri ThemeContext.Provider komponenti bilan o'rash o'rniga, komponentga qiymatlarni taqdim etish uchun yuqori darajali komponent (HOC) yaratishimiz mumkin. Bu usul orqali biz kontekst logikasini render qiluvchi komponentlardan ajratib olamiz, bu esa provayderning qayta foydalanuvchanlik imkoniyatini oshiradi.
+Hook’imiz to’g’ri mavzu qaytarayotganiga ishonch hosil qilish uchun, agar useContext(ThemeContext) noto’g’ri qiymat qaytarsa, xatoga chiqaramiz.
 
  <p align="center">
   <img src="../../images/12.provider.png" alt="Rasm" width="400" />
 </p>
 
-ThemeContext’dan foydalanishi kerak bo'lgan har bir komponent endi oddiy  useThemeContext hook’idan foydalanishi mumkin.
+Komponentlarni to'g'ridan-to'g'ri ThemeContext.Provider komponenti bilan o'rash o'rniga, komponentga qiymatlarni taqdim etish uchun yuqori darajali komponent (HOC) yaratishimiz mumkin. Bu usul orqali biz kontekst logikasini render qiluvchi komponentlardan ajratib olamiz, bu esa provayderning qayta foydalanuvchanlik imkoniyatini oshiradi.
 
  <p align="center">
   <img src="../../images/13.provider.png" alt="Rasm" width="400" />
+</p>
+
+ThemeContext’dan foydalanishi kerak bo'lgan har bir komponent endi oddiy  useThemeContext hook’idan foydalanishi mumkin.
+
+ <p align="center">
+  <img src="../../images/14.provider.png" alt="Rasm" width="400" />
 </p>
 
 Turli kontekstlar uchun turli hook’lar yaratish orqali provayderlar logikasini ma'lumotlarni render qiluvchi komponentlardan oson ajratib olish mumkin.
@@ -115,23 +120,24 @@ styled-components kutubxonasi bizga ThemeProvider’ni taqdim etadi. Har bir sti
 Keling, avvalga List misolimizni olib, komponentlarni styled-component kutubxonasidan import qilingan ThemeProvider bilan o'rab olaylik. 
 
  <p align="center">
-  <img src="../../images/14.provider.png" alt="Rasm" width="400" />
-</p>
-
-ListItem komponentiga ichki style props berish o'rniga, uni styled.li  komponentiga aylantiramiz. Bu stilli komponent bo'lgani uchun theme qiymatidan to’g’ridan-to’g’ri foydalana olamiz!
-
- <p align="center">
   <img src="../../images/15.provider.png" alt="Rasm" width="400" />
 </p>
 
-Ajoyib, endi biz ThemeProvider yordamida barcha stillli komponentlarimizga stillarni osongina qo'llashimiz mumkin!
+ListItem komponentiga ichki style props berish o'rniga, uni styled.li  komponentiga aylantiramiz. Bu stilli komponent bo'lgani uchun theme qiymatidan to’g’ridan-to’g’ri foydalana olamiz!
 
 <p align="center">
   <img src="../../images/16.provider.png" alt="Rasm" width="400" />
 </p>
 
+Ajoyib, endi biz ThemeProvider yordamida barcha stillli komponentlarimizga stillarni osongina qo'llashimiz mumkin!
+
+
 <p align="center">
   <img src="../../images/17.provider.png" alt="Rasm" width="400" />
+</p>
+
+<p align="center">
+  <img src="../../images/18.provider.png" alt="Rasm" width="400" />
 </p>
 
 # Afzalliklari
