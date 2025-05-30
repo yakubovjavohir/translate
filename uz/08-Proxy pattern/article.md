@@ -56,13 +56,13 @@ Proxy validatsiya qo'shish uchun juda foydali. Masalan foydalanuvchi person obye
 
 
 <p align="center">
-  <img src="../../images/09.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/13.proxy.png" alt="Rasm" width="400" />
 </p>
 
 Noto'g'ri qiymatlar kiritishga urinib ko’raylik!
 
 <p align="center">
-  <img src="../../images/10.proxy.png" alt="Rasm" width="400" />
+  <img src="../../images/09.proxy.png" alt="Rasm" width="400" />
 </p>
 
 Proxy noto'g'ri qiymatlar bilan person obyektini o’zgartirishga yo’l qo’ymadi, bu esa bizga ma'lumotlarimizni butunligini va kodni toza saqlashga yordam beradi!
