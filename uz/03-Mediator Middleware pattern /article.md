@@ -1,5 +1,5 @@
-<h1 align="center">Mediator/Middleware pattern </h1>
-<h2 align="center">(Vositachi/Oraliq dastur patterni) </h2>
+# Mediator/Middleware pattern 
+# (Vositachi/Oraliq dastur patterni)
 
 
 Mediator patterni komponentlarga  markaziy nuqta - mediator (vositachi) orqali bir-biri bilan o'zaro aloqada bo’lish imkonini beradi. Komponentlar bir-biri bilan to'g'ridan-to'g'ri muloqot qilish o'rniga, mediator so'rovlarni qabul qiladi va ularni yo’naltiradi! JavaScriptda mediator odatiy obyekt yoki funksiya ko’rinishida bo’ladi.

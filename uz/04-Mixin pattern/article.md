@@ -1,5 +1,5 @@
-<h1 align="center">Mixin pattern </h1>
-<h2 align="center">Qo’shimcha xususiyatlar patterni </h2>
+# Mixin pattern 
+# (Qo’shimcha xususiyatlar patterni)
 
 Mixin - bu vorislik(inheritance)dan foydalanmasdan boshqa obyekt yoki klassga qayta foydalanish mumkin bo'lgan funksionallikni qo'shish uchun ishlatiladigan obyekt. Mixinlarni mustaqil ravishda ishlata olmaymiz: ularning yagona vazifasi vorislik mavjud bo’lmagan obyektlar yoki klasslarga funksionallikni qo'shishdir. 
 
