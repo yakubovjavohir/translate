@@ -75,6 +75,9 @@ Avvalroq biz proksi ichidi maqsadli obyekt xususiyatlarini to'g'ridan-to'g'ri to
 
 obj[prop] orqali xususiyatlarga kirish yoki obj[prop] = value orqali xususiyatlarni o'rnatish o'rniga, Reflect.get() va Reflect.set() orqali maqsadli obyekt xususiyatlariga murojaat qilishimiz yoki o'zgartirishimiz mumkin. Bu metodlar ishlov beruvchi obyektidagi metodlar bilan bir xil argumentlarni qabul qiladi.
 
+<p align="center">
+  <img src="../../images/12.prxy.png" alt="Rasm" width="400" />
+</p>
 
 Juda yaxshi! Reflect obyekti yordamida maqsadli obyektning xususiyatlariga osongina murojaat qilib, ularni o'zgartirishimiz mumkin.
 
