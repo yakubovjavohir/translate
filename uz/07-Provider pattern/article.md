@@ -6,15 +6,15 @@ Biz ko’pincha *prop drilling (props’larni chuqur uzatish)* muammoasiga duch 
 
 Faraz qilaylik, bizda ma'lum ma'lumotlarni o'z ichiga olgan App komponenti bor. Komponentlar daraxti pastida esa shu ma'lumotlarni o’zida ishlatadigan `ListItem`, `Header` va `Text` komponentlari joylashgan. Bu ma'lumotlarni ushbu komponentlarga yetkazish uchun, uni bir nechta oraliq komponentlar orqali o'tkazishimiz kerak bo’ladi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/01.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Bizning kodimizda bu quyidagicha ko'rinadi:
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/02provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Props’larni bu tarzda uzatish juda chalkash bo’lib ketishi mumkin. Agar keyinchalik `data` props’ining nomini o'zgartirmoqchi bo’lib qolsak, uni barcha komponentlarda ham o’zgartirib chiqishimiz kerak bo'ladi. Ilova kattalashgan sari, *prop drilling* muammosi yanada murakkablashib boradi.
 
@@ -24,58 +24,58 @@ Aynan shu yerda **Provider Pattern** bizga yordam beradi! *Provider pattern* yor
 
 Provayder `value` props’ini qabul qiladi, bu props biz uzatmoqchi bo’lgan ma’lumotlarni o’z ichiga oladi. Provayder bilan o'ralgan barcha komponentlar bu `value` props’ining qiymatidan foydalana oladi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/03.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Biz endi `data` props’ini har bir komponentga alohida uzatib chiqishimiz shart emas! Xo'sh, endi `ListItem`, `Header` va `Text`  komponentlari `data` qiymatidan qanday foydalana oladi?
 
 Har bir komponent `useContext` hook’i orqali ma'lumotlarga kira oladi. Bu hook bizning holatda `DataContext`’ga havola qilingan kontekstni qabul qiladi. `useContext` hook’i bizga kontekst (context) obyektidan ma'lumotlarni o'qish va unga yozish imkonini beradi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/04.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Ma'lumotlardan foydalanmaydigan komponentlar endi ular bilan umuman ishlamaydi. Endi props’larni ishlatmaydigan komponentlar orqali bir necha darajaga uzatish haqida bosh qotirishimizga hojat yo’q, bu esa refaktoringni ancha osonlashtiradi. 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/05.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 *Provider pattern* global ma'lumotlarni ulashish uchun juda foydali. Bu pattern’ning keng tarqalgan foydalanish holatlaridan biri - ko'plab komponentlar bilan interfeys mavzusi (UI)ning holatini ulashishdir.
 
 Aytaylik, bizda ro'yxatni ko'rsatadigan oddiy ilova bor.
 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/06.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/07.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Biz foydalanuvchilarga tugmani bosib almashtirish orqali yorug' va qorong'i rejimlar orasida almashish imkoniyatini bermoqchimiz. Foydalanuvchi yorug’ rejimdan qorong’i rejimga va aksincha qilib almashtirganda, orqa fon rangi va matn rangi o'zgarishi kerak! Joriy mavzu qiymatini har bir komponentga alohida uzatish o'rniga, biz komponentlarni `ThemeProvider` bilan o’rab, joriy mavzu ranglarini provayderga uzatishimiz mumkin. 
 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/08.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `Toggle` va `List` komponentlari ikkalasi ham `ThemeContext` provayderi bilan o‘ralgani uchun, biz provayderga value sifatida uzatilgan `theme` va `toggleTheme` qiymatlaridan foydalana olamiz.
 
 `Toggle` komponentida mavzuni mos ravishda yangilash uchun `toggleTheme` funksiyasidan foydalanishimiz mumkin.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/09.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `List` komponentining o'zi joriy mavzu qiymatidan foydalanmaydi. Biroq, `ListItem` komponentlari esa undan foydalanadi! Biz `theme`  kontekstidan to'g'ridan-to'g'ri `ListItem` ichida foydalana olamiz. 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/10.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Juda soz! Joriy Mavzu qiymatidan foydalanmaydigan komponentlarga hech qanday ma'lumot uzatishimiz shart bo’lmadi.
 
@@ -85,27 +85,27 @@ Komponentlarga kontekst taqdim qilish uchun maxsus hook yaratishimiz mumkin. Har
 
 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/11.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Hook’imiz to’g’ri mavzu qaytarayotganiga ishonch hosil qilish uchun, agar `useContext(ThemeContext)` noto’g’ri qiymat qaytarsa, xatoga chiqaramiz.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/12.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Komponentlarni to'g'ridan-to'g'ri `ThemeContext.Provider` komponenti bilan o'rash o'rniga, komponentga qiymatlarni taqdim etish uchun yuqori darajali komponent (HOC) yaratishimiz mumkin. Bu usul orqali biz kontekst logikasini render qiluvchi komponentlardan ajratib olamiz, bu esa provayderning qayta foydalanuvchanlik imkoniyatini oshiradi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/13.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `ThemeContext`’dan foydalanishi kerak bo'lgan har bir komponent endi oddiy  `useThemeContext` hook’idan foydalanishi mumkin.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/14.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Turli kontekstlar uchun turli hook’lar yaratish orqali provayderlar logikasini ma'lumotlarni render qiluvchi komponentlardan oson ajratib olish mumkin.
 
@@ -119,26 +119,26 @@ Ba'zi kutubxonalar ichki o’rnatilgan provayderlarni taqdim etadi, ularning qiy
 
 Keling, avvalga `List` misolimizni olib, komponentlarni `styled-component` kutubxonasidan import qilingan `ThemeProvider` bilan o'rab olaylik. 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/provider/15.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `ListItem` komponentiga ichki `style` props berish o'rniga, uni `styled.li`  komponentiga aylantiramiz. Bu stilli komponent bo'lgani uchun `theme` qiymatidan to’g’ridan-to’g’ri foydalana olamiz!
 
-<p align="center">
+<div align="center">
   <img src="../../images/provider/20.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Ajoyib, endi biz `ThemeProvider` yordamida barcha stillli komponentlarimizga stillarni osongina qo'llashimiz mumkin!
 
 
-<p align="center">
+<div align="center">
   <img src="../../images/provider/18.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="../../images/provider/19.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 # Afzalliklari
 
@@ -159,9 +159,9 @@ Keling, oddiy hisoblagich (counter) misolini ko'rib chiqaylik. Uning qiymati `Bu
 
 `Increment` tugmasini bosganingizda nafaqat hisob, balki `Reset` komponentidagi sana ham qayta render bo’lishini ko’rasiz!
 
-<p align="center">
+<div align="center">
   <img src="../../images/provider/17.provider.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `Reset` komponenti ham `useContext`’dan foydalangani uchun qayta render bo’ladi. Nisbatan kichikroq ilovalarda bu xavotirga arzigulik muammo bo’lmasligi mumkin. Ammo, kattaroq ilovalarda tez-tez yangilanadigan qiymatni ko'plab komponentlarga uzatish ishlash samaradorligiga jiddiy salbiy ta'sir ko'rsatishi mumkin.
 

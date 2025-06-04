@@ -6,16 +6,16 @@ Umuman olganda, proksi kimningdir o’rnida turuvchi vositachi degani. Kimdir bi
 
  Keling, Jon Doeni ifodalovchi `person` obyektini yarataylik.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/proxy/01.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 
 Bu obyekt bilan to'g'ridan-to'g'ri ishlash o'rniga, biz proksi obyekti orqali muloqot qilmoqchimiz. JavaScriptda yangi `Proxy` obyekt nusxasini yaratish orqali buni osongina amalga mumkin.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/proxy/02.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 
 `Proxy`’ning ikkinchi argumenti - bu *ishlov beruvchi (handler)ni* ifodalovchi obyektdir. Ishlov beruvchi obyektda biz o'zaro interaktivlik turiga qarab muayyan xatti-harakatni belgilashimiz mumkin. `Proxy` ishlov beruvchi obyektiga [ko'plab metodlar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)  qo’shish mumkin bo'lsa-da, eng ko’p ishlatiladigan ikkitasi  - bu `get` va `set` hisoblanadi. 
@@ -25,28 +25,28 @@ Bu obyekt bilan to'g'ridan-to'g'ri ishlash o'rniga, biz proksi obyekti orqali mu
 
  Natijada quyidagi jarayon sodir bo'ladi:
 
-  <p align="center">
+  <div align="center">
   <img src="../../images/proxy/03.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/04.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `person` obyekti bilan to'g'ridan-to'g'ri ishlash o'rniga, `personProxy` bilan ishlaymiz.
 
 
 Keling, `personProxy` proksisiga ishlov beruvchi (handler)lar qo'shamiz. `Proxy`’ning `set` metodi chaqirilganda, ya’ni xususiyat o'zgartirilayotganda, xususiyatning oldingi va yangi qiymatini qayd etishini xohlaymiz. `Proxy`’ning `get` metodi chaqirilganda esa, ya’ni xususiyatga murojaat qilinayotganda, xususiyatning kaliti (key) va qiymatini (value) o'z ichiga olgan tushunishga oson bo’lgan xabarni qayd etishini xohlaymiz.
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/05.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Juda ajoyib! Keling, endi xususiyatni o'zgartirishga yoki olishga harakat qilganimizda nima sodir bo'lishini ko'rib chiqamiz.
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/06.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `name` xususiyatiga murojaat etganimizda, *Proxy* ancha tushunarli xabar qaytaradi: `The value of name is John Doe.`
 
@@ -55,15 +55,15 @@ Juda ajoyib! Keling, endi xususiyatni o'zgartirishga yoki olishga harakat qilgan
 *Proxy* **validatsiya** qo'shish uchun juda foydali. Masalan foydalanuvchi `person` obyektining yoshi qiymatini satr qiymatiga o'zgartira olmasligi yoki unga bo'sh ism bera olmasligi kerak. Yoki agar foydalanuvchi obyektda mavjud bo'lmagan xususiyatga murojaat qilmoqchi bo’lsa, biz uni bu haqda ogohlantirishimiz lozim. 
 
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/13.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Noto'g'ri qiymatlar kiritishga urinib ko’raylik!
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/09.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 *Proxy* noto'g'ri qiymatlar bilan `person` obyektini o’zgartirishga yo’l qo’ymadi, bu esa bizga ma'lumotlarimizni butunligini va kodni toza saqlashga yordam beradi!
 
@@ -75,15 +75,15 @@ Avvalroq biz proksi ichidi maqsadli obyekt xususiyatlarini to'g'ridan-to'g'ri to
 
 `obj[prop]` orqali xususiyatlarga kirish yoki `obj[prop] = value` orqali xususiyatlarni o'rnatish o'rniga, `Reflect.get()` va `Reflect.set()` orqali maqsadli obyekt xususiyatlariga murojaat qilishimiz yoki o'zgartirishimiz mumkin. Bu metodlar ishlov beruvchi obyektidagi metodlar bilan bir xil argumentlarni qabul qiladi.
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/12.proxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Juda yaxshi! `Reflect` obyekti yordamida maqsadli obyektning xususiyatlariga osongina murojaat qilib, ularni o'zgartirishimiz mumkin.
 
-<p align="center">
+<div align="center">
   <img src="../../images/proxy/11.prxy.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 ### Afzalliklari
 

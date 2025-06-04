@@ -9,56 +9,56 @@ Bu patternni havo harakatini nazorat qiluvchi dispetcher va uchuvchi o'rtasidagi
 Garchi, biz JavaScriptda samolyotlarni boshqarmasak ham, ko'pincha obyektlar orasidagi ko'p yo'nalishli ma'lumotlar bilan ishlashimizga to’g’ri keladi. Tizimda komponentlar soni ko’p bo’lganda, ular orasidagi aloqa chalkashib ketishi mumkin.
 
 
-<p align="center">
-  <img src="../../images/mediator/01.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/01.mediator.png" alt="Rasm" />
+</div>
 
 Har bir obyektning boshqa obyektlar bilan to'g'ridan-to'g'ri muloqot qilishiga yo’l qo’yish o’rniga (bu ko’pdan-ko’pga munosabatlarni keltirib chiqarishi tufayli), obyektlarning so'rovlari vositachi, ya’ni mediator, tomonidan boshqariladi. Mediator bu so'rovni qayta ishlaydi va uni kerakli manzilga yo’naltiradi.
 
-<p align="center">
-  <img src="../../images/mediator/02.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/02.mediator.png" alt="Rasm" />
+</div>
 
 *Mediator patterni* uchun enga yaxshi misol - bu onlayn muloqot xonasi (chatroom)! Bunday muloqot xonasidagi foydalanuvchilar bir-birlari bilan to’g’ridan-to’g’ri gaplashmaydi. Buning o'rniga, ushbu onlayn muloqot xonasi foydalanuvchilar o'rtasida vositachi, aniqroq aytadigan bo’lsak mediator bo'lib xizmat qiladi.
 
-<p align="center">
-  <img src="../../images/mediator/03.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/03.mediator.png" alt="Rasm" />
+</div>
 
 
 Biz onlayn muloqot xonasiga ulangan yangi foydalanuvchilarni yaratishimiz mumkin. Har bir foydalanuvchi obyekti xabarlarni yuborish uchun ishlatiladigan `send` metodiga ega.
 
 
-<p align="center">
-  <img src="../../images/mediator/04.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/04.mediator.png" alt="Rasm" />
+</div>
 
 # Amaliy misol
 [Express.js](https://expressjs.com/) - mashhur veb-ilovalar server freymvorki hisoblanadi. Biz foydalanuvchi murojaat qila oladigan ma'lum yo’nalish(route)larga callback funksiyalarni qo'shishimiz mumkin.
 
 Aytaylik, foydalanuvchi asosiy ``/`` yo’nalishiga murojaat qilganida, so'rovga sarlavha (header) qo'shmoqchimiz. Buni middleware callback orqali amalga oshirishimiz mumkin.
 
-<p align="center">
-  <img src="../../images/mediator/05.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/05.mediator.png" alt="Rasm" />
+</div>
 
 Ushbu `next` metodi so’rov-javob (request-response) siklida keyingi callbackni chaqiradi. Bu orqali *request* va *response* o'rtasida joylashgan middleware funksiyalari zanjirini samarali yaratgan bo'lardik yoki aksincha.
 
-<p align="center">
-  <img src="../../images/mediator/06.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/06.mediator.png" alt="Rasm" />
+</div>
 
 Keling, `test-header` to'g'ri qo'shilganligini tekshiradigan yana bir middleware funksiyasini qo'shamiz. Oldingi middleware funksiyasi tomonidan kiritilgan o'zgarish butun zanjir ketma-ketligida ko'rinadi.
 
-<p align="center">
-  <img src="../../images/mediator/07.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/07.mediator.png" alt="Rasm" />
+</div>
 
 Juda yaxshi! Endi biz request obyektini bir yoki bir nechta **middleware funksiyalari** orqali response’gacha kuzatib borish va o’zgartirish imkoniyatiga egamiz.
 
-<p align="center">
-  <img src="../../images/mediator/08.mediator.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/mediator/08.mediator.png" alt="Rasm" />
+</div>
 
 Har safar foydalanuvchi ``/`` asosiy yo’nalishiga murojaat qilganida, ikkita middleware callback funksiyasi ishga tushadi.
 

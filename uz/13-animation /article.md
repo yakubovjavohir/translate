@@ -10,17 +10,17 @@ JavaScript API asosan `document.startViewTransition(callback)` atrofida qurilgan
 
 Oddiy misol sifatida  `<details>` elementini ochib/yopib almashtirilishini olaylik:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/01.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `document.startViewTransition` callbackni chaqirishdan oldin joriy DOM holatining skrinshotini oladi. Bu misolda bizdagi callback faqat `open` atributini almashtiradi. Tugallangach, brauzer dastlabki holat skrinshoti va yangi versiya holati o'rtasida o'tishni (transition) amalga oshirishi mumkin. 
 
 Ushbu eski va yangi holatlar psevdo elementlar sifatida taqdim etiladi va CSSda mos ravishda  `::view-transition-old(root)` va `::view-transition-new(root)` orqali murojaat qilish mumkin. Masalan, o’tishni sekinlashtirish uchun `animation-duration` (animatsiya davomiyligi)ni quyidagicha uzaytirishimiz mumkin:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/02.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Ko’rinish o’tishlari, shuningdek, bir nechta o'zgarishlarni standart *crossfade (kesishma yo’qolishi)* rejimidan tashqari murakkab animatsiyalar bilan jonlantirishga ham qodir. Muayyan elementlarga CSS `view-transition-name` va `layout` yoki `paint` `containment` berish, orqali API dasturchilarga elementlarning qanday o'tishini, jumladan, kengligi, balandligi va pozitsiyasi ustidan batafsil boshqarish imkonini beradi. Bu murakkab o’tishlar bir sahifadan boshqasiga o’tish jarayonini yaxshiroq tushuntirishga yordam beradi.
 
@@ -30,15 +30,15 @@ Rasm ostidagi tafsilotlar biroz ko'proq stil berishni talab qiladi. Ko’rib tur
 
 Biz har bir qator elementiga o’zining `view-transition-name`’larini beramiz:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/03.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Bu har bir hudud uchun *o’tish guruhlari (transition groups)ni* yaratadi, ular xuddi yuqorida aytib o'tilgan yangi/eski skrinshotlar kabi, lekin butun dokumentni o’rniga faqat sahifaning bir qismini qamrab oladi. Dokumentning barcha o'tish elementlariga `::view-transition-old(root)` va `::view-transition-new(root)` orqali murojaat qilish mumkin bo’lgani kabi, bu o'tish guruhlariga `::view-transition-old(NAME)` va `::view-transition-new(NAME)` orqali ham murojaat qilish mumkin. Tafsilotlar matni fotogalereya sahifasida mavjud emasligini unutmang, shuning uchun galereya sahifasidan foto sahifasiga o'tishda faqat `::view-transition-new(NAME)` orqali bo'ladi, :`::view-transition-old(NAME)` emas va aksincha orqaga harakat qilganda ham shunday. Demak, biz bu holatlarni `:only-child` psevdo klassi yordamida aniqlab, animatsiyani  `::view-transition-new(root)` guruhi uchun sozlashimiz mumkin:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/04.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Bu API asoslari. [Jeyk Archibaldning View Transitions haqidagi ajoyib maqolasi](https://developer.chrome.com/docs/web-platform/view-transitions) tafsilotlarni yaxshi yoritib bergan. Keling, to'liq sahifa navigatsiyalarini qanday o'tkazishimiz mumkinligini ko'rib chiqaylik.
 
@@ -70,21 +70,21 @@ Yaxshiyamki, agar DOMni yangilash callback’imizdan promise qaytarsak, *view tr
 
 Bunda kodimiz quyidagicha ko’rinishda bo’ladi:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/05.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Bundan Next.js ilovasida foydalanish uchun avval ishlab chiqish muhitida Reactning qat’iy rejimi (strict mode)bu o‘chirib qo‘yamiz. Qat’iy rejim o'z tekshiruvlarini komponentni ikki marta renderlash orqali amalga oshiradi. Bu ishlab chiqish jarayonida `ViewTransition` renderlash oqimiga xalaqit beradi, shuning uchun uni global miqyosda o‘chirib,  `StrictMode` komponenti orqli bola komponentlar uchun uni qayta yoqamiz.
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/06.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Keyin, `pages/_app.js` faylida `Component`’ni `ViewTransition` va `StrictMode` komponentlari bilan o‘rab olamiz, shunda animatsiyali o’tishlarni ko’ra boshlashimiz kerak:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/07.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 [Next.js namoyishi](https://frolicking-dusk-29be0a.netlify.app/), biz qilgan [jonli Next.js demo](https://photography-view-transitions-nextjs.vercel.app/) va uning [manba](https://github.com/domchristie/photography-view-transitions-nextjs) kodini ko‘rishingiz mumkin.
 
@@ -117,9 +117,9 @@ Eslatma: *View Transition API’ni* ko'p sahifali navigatsiyalar uchun, ya'ni Ja
 
 Uni ishga tushirish uchun animatsiya qilmoqchi bo'lgan elementlarga `data-turn-exit` va `data-turn-enter` atributlarini qo'shing, so'ngra CSS stillaringizni qo'llang. Masalan, asta-sekin paydo bo’lish/yo’qolish (fade-in/fade out) uchun:
 
-<p align="center">
+<div align="center">
   <img src="../../images/animation/08.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Keyin `Turn` kutubxonasini ilovangizning JavaScript fayliga import qiling va `Turn.start()`’ni chaqiring.
 

@@ -10,37 +10,37 @@ Avvalo, ES2015 klassi yordamida singleton qanday yaratilishini ko'rib chiqaylik.
   - `increment` - counter qiymatini bittaga oshiradigan metod
   - `decrement` - counter qiymatini bittaga kamaytiradigan metod
 
-  <p align="center">
+  <div align="center">
   <img src="../../images/singletion/01.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Biroq, bu klass hali Singleton talablariga javob bermaydi! *Singleton* **faqat bir marta** yaratilishi mumkin bo’lish kerak. Hozircha biz `Counter` klassining bir nechta nusxasini yarata olamiz.
 
-<p align="center">
+<div align="center">
   <img src="../../images/singletion/02.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `new` metodini ikki marta chaqirish orqali `counter1` va `counter2` bo’lgan turli klass nusxalariga ega bo’lamiz. `counter1` va `counter2`’dagi `getInstance` metodi bilan qaytarilgan qiymatlar turli klass nusxalariga havolalarni qaytardi: ular mutlaqo teng emas!
 
-<p align="center">
+<div align="center">
   <img src="../../images/singletion/03.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Keling `Counter` klassining faqat bitta nusxasini yaratish mumkinligiga ishonch hosil qilaylik.
 
 Faqat bitta nusxa yaratilishini ta’minlashning bir usuli - `instance` nomli o'zgaruvchini yaratishdir. `Counter` konstruktorida yangi nusxa yaratilganda, biz ushbu `instance` o’zgaruvchisini ushbu nusxaga havola qilib o'rnatamiz. Agar `instance` o'zgaruvchisi allaqachon qiymatga ega bo’lsa, yangi nusxalarning yaratilishin oldini olishimiz mumkin. Bunday holatda nusxa (instance) allaqachon mavjud bo’ladi va bu xato hisoblanadi: foydalanuvchini ogohlantirish uchun xatolik chiqarilishi kerak. 
 
-<p align="center">
+<div align="center">
   <img src="../../images/singletion/12.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Juda yaxshi! Endi biz bir nechta nusxalar yarata olish imkoniyatidan mahrum bo’ldik.
 
 Keling, endi `Counter` nusxasini `counter.js` faylidan eksport qilaylik. Ammo buni amalga oshirishdan oldin, nusxani ham **muzlatib** qo'yishimiz kerak. `Object.freeze` metodi tashqi kodning *Singleton*’ni o'zgartirish imkoniyatini to’liq cheklaydi. Muzlatilgan nusxaga yangi xususiyatlar qo'shish yoki mavjud xususiyatlarni o’zgartirish imkonsiz bo’lib qoladi. Bu esa *Singleton*’dagi qiymatlarning tasodifan qayta yozilishi xavfini sezilarli darajada kamaytiradi.
 
-<p align="center">
+<div align="center">
   <img src="../../images/singletion/05.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Keling, `Counter` misolini amalga oshiradigan dasturni ko'rib chiqaylik. Bizda quyidagi fayllar mavjud:
 
@@ -50,19 +50,19 @@ Keling, `Counter` misolini amalga oshiradigan dasturni ko'rib chiqaylik. Bizda q
  - `blueButton.js`: `Counter`’ni import qiladi, ko’k tugmaga `Counter`’ning `increment` metodini *event listener* sifatida qo'shadi va `getCount`  metodini chaqirish orqali `counter`’ning joriy qiymatini qayd etadi.
 
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/06.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/07.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `blueButton.js` va `redButton.js` ikkalasi ham `counter.js`’dan **bir xil nusxani** import qiladi. Bu nusxa ikkala faylda ham `Counter` sifatida import qilinadi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/08.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `redButton.js` yoki `blueButton.js`’da `increment` metodini chaqirganimizda, `Counter` nusxasidagi `counter` xususiyatining qiymati ikkala faylda ham yangilanadi. Qizil yoki ko'k tugmani bosishimizning farqi yo’q: bir xil qiymat barcha nusxalar orasida ulashiladi. Shuning uchun ham, garchi biz bu metodni turli fayllarda chaqirayotgan bo’lsak ham, hisoblagich har safar bittaga oshib boradi. 
 
@@ -84,9 +84,9 @@ Keling, avvalgi misolimizni qayta ko’rib chiqaylik. Biroq, bu safar `counter` 
  - `count` qiymatini bittaga oshiradigan `increment` metodi
  - `count` qiymatini bittaga kamaytiradigan `decrement` metodi
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/09.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Javascriptda obyektlar havolar (reference) orqali uzatilganligi uchun, `redButton.js` va `blueButton.js` bir xil `counter` obyektiga havolani import qilmoqda. Bu fayllardan istalganida `count` qiymatini o'zgartirish `counter` obyektidagi qiymatni o'zgartiradi va bu o’zgarish ikkala faylda ham ko'rinadi.
 
@@ -94,17 +94,17 @@ Javascriptda obyektlar havolar (reference) orqali uzatilganligi uchun, `redButto
 
 *Singleton*’ga asoslangan kodni testlash murakkab bo'lishi mumkin. Har safar yangi klass nusxalari yarata olmasligimiz tufayli, barcha testlar avvalgi testning global nusxasiga kiritilgan o’zgartirishlarga bog’liq bo’ladi. Bu holatda testlarning bajarilish tartibi juda muhim, chunki bitta kichik o'zgarish butun test to'plamining ishdan chiqishiga olib kelishi mumkin. Testlashdan so'ng, testlar tomonidan kiritilgan o'zgarishlarni bekor qilish uchun butun nusxani qayta tiklashimiz kerak bo’ladi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/10.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
  ### **Qaramliklarning yashirinishi**
 
 Boshqa modulni (bizning holatimizda `superCounter.js`’ni) import qilayotganda, bu modul *Singleton*’ni import qilayotgani darhol ko’rinmasligi mumkin. Boshqa fayllarda, masalan `index.js`’da, biz bu modulni import qilib, uning metodlarini chaqirishimiz mumkin. Shu tarzda, biz bilmasdan *Singleton*’dagi qiymatlarni o'zgartirib qo’yamiz. Bu kutilmagan oqibatlarga olib kelishi mumkin, chunki ilova bo’ylab *Singleton*’ning bir nechta nusxalari ulashilgan bo'lishish mumkin va ularning hammasi o'zgartiriladi.
 
- <p align="center">
+ <div align="center">
   <img src="../../images/singletion/11.singleton.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 # **Global xatti-harakat**
 

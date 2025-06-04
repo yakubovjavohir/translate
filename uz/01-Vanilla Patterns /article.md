@@ -23,16 +23,16 @@ Command patterni - yordamida biz ma'lum bir vazifani bajaradigan obyektlarni met
 Aytaylik, bizda oziq-ovqat yetkazib beruvchi onlayn platforma bor. Foydalanuvchilar buyurtmalarni joylashtirishi, kuzatishi va bekor qilishi mumkin.
 
 
-<p align="center">
-  <img src="../../images/vanilla/01.vinilla.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/vanilla/01.vinilla.png" alt="Rasm"/>
+</div>
 
 
 `OrderManager` klassida bizda `placeOrder`, `trackOrder` va `cancelOrder` metodlariga kirish imkoniyati mavjud. Ushbu metodlardan to’g’ridan-to’g’ri foydalanish JavaScript uchun to’g’ri yondashuv hisoblanadi.
 
-<p align="center">
-  <img src="../../images/vanilla/02.vinilla.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/vanilla/02.vinilla.png" alt="Rasm"/>
+</div>
 
 Biroq, metodlarni to’g’ridan-to’g’ri `manager` obyekt nusxasida (instance) chaqirishning salbiy tomonlari mavjud.  Keyinchalik ba'zi metodlarning nomini o'zgartirishga qaror qilishimiz yoki metodlarning funksionalligi o'zgarishi mumkin.
 
@@ -42,9 +42,9 @@ Keling, `OrderManager` klassini qayta tuzib chiqamiz:  `placeOrder`, `cancelOrde
 
 Har bir buyruq menejerning `orders` ma’lumotlariga kirish huquqiga ega bo'lishi kerak, biz uni birinchi argument sifatida uzatamiz. 
 
-<p align="center">
-  <img src="../../images/vanilla/03.vinilla.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/vanilla/03.vinilla.png" alt="Rasm"/>
+</div>
 
 
 # Buyurtma menejeri uchun Commandlar
@@ -54,16 +54,16 @@ Buyurtma menejeri uchun uchta `Command` yaratishimiz kerak:
 - `CancelOrderCommand`  
 - `TrackOrderCommand`
 
-<p align="center">
-  <img src="../../images/vanilla/04.vinilla.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/vanilla/04.vinilla.png" alt="Rasm"/>
+</div>
 
 
 Ajoyib! To'g'ridan-to'g'ri `OrderManager` nusxasiga bog'langan metodlar o'rniga, ular endi alohida, mustaqil funksiyalar bo'lib, ularni `OrderManager` da mavjud  `execute` metodi orqali chaqirishimiz mumkin.
 
-<p align="center">
-  <img src="../../images/vanilla/05.vinilla.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/vanilla/05.vinilla.png" alt="Rasm"/>
+</div>
 
 
 # Afzalliklari

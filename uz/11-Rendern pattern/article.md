@@ -14,9 +14,9 @@ SSR’ning asosiy tamoyili - HTML serverda render qilinadi va uni klientda qayta
 
 [Orollar arxitekturasi](https://jasonformat.com/islands-architecture/) atamasi Keti Saylor-Miller va Jeyson Miller tomonidan ommalashtirilgan. Bu atama statik HTML ustiga mustaqil ravishda joylashtirilishi mumkin bo'lgan interaktiv "orollar" orqali yuboriladigan JavaScript hajmini kamaytirishga qaratilgan paradigmani tasvirlaydi. *Orollar* - komponentlarga asoslangan arxitektura bo’lib, u sahifani statik va dinamik orollarga bo’lingan holda ko’rinishini taqdim qiladi. Sahifaning statik qismlari sof nointeraktiv HTML bo'lib, hidratsiyaga muhtoj emas. Dinamik qismlar esa renderlashdan keyin o'zlarini qayta hidratsiya qilish qobiliyatiga ega bo’lgan HTML va skriptlar kombinatsiyasi hisoblanadi.
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/01.rendering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Keling, orollar arxitekturasini hozirda amalda mavjud bo’lgan turli implementatsiya variantlari bilan batafsilroq ko'rib chiqaylik.
 
@@ -36,9 +36,9 @@ Orollar uslubidagi arxitektura sahifalarni barcha statik kontentlari bilan serve
 
 Progressiv hidratsiyada sahifaning hidratsiya arxitekturasi yuqoridan pastga qarab ishlaydi. Sahifa individual komponentlarning rejalashtirish va hidratsiya qilinishini boshqaradi. Orollar arxitekturasida har bir komponentning o'zini hidratsiyalash skripti mavjud bo'lib, u sahifadagi boshqa skriptlardan mustaqil ravishda asinxron tarzda ishlaydi. Bir komponentdagi ishlash samaradorligi (performance) muammosi boshqasiga ta'sir qilmasligi kerak.
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/02.rendering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 
 ## **Orollar implementatsiyasi**
@@ -68,21 +68,21 @@ Bugungi kunda turli freymvorklar orollar arxitekturasini qo'llab-quvvatlashga im
 
  Quyida biz Astro yordamida yaratgan namunaviy blog sahifasi keltirilgan. `SamplePost` sahifasi bitta interaktiv komponent - `SocialButtons`’ni import qiladi. Ushbu komponent HTML’ga markup orqali kerakli joyda joylashtiriladi.
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/03.rendering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 `SocialButtons` komponenti o’zining HTML va tegishli hodisa ishlov beruvchilarga ega bo’lgan Preact komponentidir.
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/04.renfering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Komponent ishga tushish vaqtida sahifaga joylashtiriladi va klient tomonida hidratsiyalanadi, shunda *bosish hodisalari (click event)* kerakli tarzda ishlaydi.
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/05.rendering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 Astro HTML, CSS va skriptlar o'rtasida aniq chegaralashni ta’minlaydi va komponentlarga asoslangan dizaynni rag'batlantiradi. Ushbu freymvork yordamida veb-saytlarni o'rnatish va yaratishni boshlash oson.
 
@@ -94,9 +94,9 @@ Astro HTML, CSS va skriptlar o'rtasida aniq chegaralashni ta’minlaydi va kompo
 
 *Astroning Next.js va Nuxt.js uchun yaratilgan dokumentatsiya veb-saytlari bilan [taqqoslanishi](https://docs.astro.build/comparing-astro-vs-other-tools#nextjs-vs-astro) JavaScript kodining 83% ga qisqarganini ko'rsatdi. [Boshqa foydalanuvchilar](https://divriots.com/blog/our-experience-with-astro/) ham Astro bilan ishlash samaradorligi yaxshilanganligini ta’kidlashgan.*
 
-<p align="center">
+<div align="center">
   <img src="../../images/rendering/06.rendering.png" alt="Rasm" width="400" />
-</p>
+</div>
 
 *Rasm manbaasi: [https://divriots.com/blog/our-experience-with-astro/](https://divriots.com/blog/our-experience-with-astro/)*
 

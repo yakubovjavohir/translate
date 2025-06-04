@@ -4,21 +4,21 @@
 
 Aytaylik, ilovamiz uchun bizga ko'p foydalanuvchilar kerak. Biz `firstName`, `lastName` va `email` xususiyatlariga ega yangi foydalanuvchilarni yaratishimiz mumkin. Factory funksiyasi yangi yaratilgan obyektga `fullName` metodini ham qo'shadi, bu esa `firstName` va `lastName` larni qaytaradi.
 
-<p align="center">
-  <img src="../../images/factory/01.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/01.design.png" alt="Rasm" />
+</div>
 
 Ajoyib! Endi `createUser` funksiyasini chaqirish orqali bir nechta foydalanuvchilarni osongina yaratishimiz mumkin.
 
-<p align="center">
-  <img src="../../images/factory/02.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/02.design.png" alt="Rasm" />
+</div>
 
 Agar biz nisbatan murakkab va konfiguratsiya qilish mumkin bo'lgan obyektlarni yaratayotgan bo'lsak, *factory pattern* foydali bo'lishi mumkin. *Kalit (key) va qiymat (value)*lar ma'lum bir muhit yoki konfiguratsiyaga bog'liq bo'lishi mumkin. Factory pattern yordamida biz maxsus kalit va qiymatlarni o'z ichiga olgan yangi obyektlarni osongina yarata olamiz!
 
-<p align="center">
-  <img src="../../images/factory/03.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/03.design.png" alt="Rasm" />
+</div>
 
 # Afzalliklari
 
@@ -30,9 +30,9 @@ JavaScriptda *factory pattern* `new` kalit so'zidan foydalanmasdan obyektni qayt
 
 Biroq, ko'p hollarda har safar yangi obyektlar yaratish o'rniga yangi nusxalar yaratish xotirani samaraliroq qilishi mumkin.
 
-<p align="center">
-  <img src="../../images/factory/04.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/04.design.png" alt="Rasm" />
+</div>
 
 
 
@@ -50,41 +50,41 @@ Ilovamizda foydalanuvchilar kitob qo'shish imkoniyatiga ega bo'lishlarini xohlay
 
 Agar bir xil kitobning bir nechta nusxasi bo'lsa, har safar yangi kitob nusxasini yaratish maqsadga muvofiq emas. Buning o'rniga, biz bitta kitobni ifodalovchi `Book` konstruktorining bir nechta nusxalarini yaratamiz.
 
-<p align="center">
-  <img src="../../images/factory/06.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/06.design.png" alt="Rasm" />
+</div>
 
 Keling, ro'yxatga yangi kitoblar qo'shish funksiyasini yarataylik. Agar kitob bir xil ISBN raqamiga ega bo'lsa, ya'ni aynan bir xil kitob turi bo'lsa, biz butunlay yangi `Book` nusxasini yaratmaymiz. Buning o'rniga, avvalo, bu kitobning mavjudligini tekshirishimiz kerak.
 
-<p align="center">
-  <img src="../../images/factory/07.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/07.design.png" alt="Rasm" />
+</div>
 
 Agar unda hali kitobning ISBN raqami mavjud bo'lmasa, biz yangi kitob yaratamiz va uning ISBN raqamini `isbnNumbers`  to'plamiga qo'shamiz. 
 
-<p align="center">
-  <img src="../../images/factory/08design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/08design.png" alt="Rasm" />
+</div>
 
 `createBook` funksiyasi bir turdagi kitobning yangi nusxalarini yaratishga yordam beradi. Biroq, kutubxonada odatda bitta kitobning bir nechta nusxasi bo’ladi! Keling, bir xil kitobning bir nechta nusxasini qo'shish imkonini beruvchi `addBook` funksiyasini yarataylik. U yangi yaratilgan `Book` nusxasini yoki allaqachon mavjud nusxani qaytaradigan `createBook`  funksiyasini chaqirishi kerak.
 
 Nusxalarning umumiy sonini kuzatib borish uchun kutubxonadagi kitoblarning umumiy sonini o'z ichiga olgan `bookList` massivini yaratamiz.
 
-<p align="center">
-  <img src="../../images/factory/09.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/09.design.png" alt="Rasm" />
+</div>
 
 Ajoyib! Har safar nusxa qo'shganimizda yangi `Book` nusxasini yaratish o'rniga, biz ushbu nusxa uchun allaqachon mavjud `Book` nusxasidan samarali foydalanishimiz mumkin. Keling, 3 ta kitobning 5 ta nusxasini yarataylik: Garri Potter (Harry Potter), Mayna qushni o’ldirish (To Kill a Mockingbird) va Shovvoz Getsbi (The Great Gatsby).
 
-<p align="center">
-  <img src="../../images/factory/10.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/10.design.png" alt="Rasm" />
+</div>
 
 5 nusxa mavjud bo'lsa-da, bizda faqat 3 ta `Book` obyekti bor!
 
-<p align="center">
-  <img src="../../images/factory/11.design.png" alt="Rasm" width="400" />
-</p>
+<div align="center">
+  <img src="../../images/factory/11.design.png" alt="Rasm" />
+</div>
 
 
 *Flyweight patterni* tizimning barcha mavjud operativ xotirasini band qilishi mumkin bo'lgan juda ko'p obyektlarni yaratishda foydalidir. Bu bizga ishlatilayotgan xotira hajmini minimallashtirishga imkon beradi.
